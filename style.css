@@ -47,8 +47,33 @@ html {
 
 header {
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
+  padding: 2em 1em;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 35vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  font-family: var(--font-family-barlow);
 }
 
 .main__container {
@@ -90,5 +115,13 @@ header {
 
   .main__container img {
     margin: 4em 0 6em 0;
+  }
+
+  .navbar-title {
+    font-size: 2em;
+  }
+
+  .navbar-icon img {
+    height: 1.7em;
   }
 }
