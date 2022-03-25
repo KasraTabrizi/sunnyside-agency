@@ -50,7 +50,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 2em 1em;
+  padding: 1.5em 4.4em;
 }
 
 .navbar-header {
@@ -64,9 +64,11 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 35vw;
+  width: 30vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
 }
 
 nav li a {
@@ -74,6 +76,14 @@ nav li a {
   text-decoration: none;
   display: block;
   font-family: var(--font-family-barlow);
+}
+
+nav li:last-child a {
+  font-family: var(--font-family-fraunces);
+  color: var(---very-dark-desat-blue);
+  background-color: var(--white);
+  padding: 0.8em 1.2em;
+  border-radius: 2em;
 }
 
 .main__container {
