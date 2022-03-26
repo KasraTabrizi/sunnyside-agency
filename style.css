@@ -82,8 +82,9 @@ nav li:last-child a {
   font-family: var(--font-family-fraunces);
   color: var(---very-dark-desat-blue);
   background-color: var(--white);
-  padding: 0.8em 1.2em;
+  padding: 1em 1.4em;
   border-radius: 2em;
+  font-size: 0.8em;
 }
 
 .main__container {
