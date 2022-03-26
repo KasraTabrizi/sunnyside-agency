@@ -11,7 +11,6 @@ navBarHamburger[0].addEventListener("click", () => {
 });
 
 // CLOSE HAMBURGER MENU
-
 //WHEN CLICKED ON CLOSE BUTTON
 navBarClose.addEventListener("click", () => {
   navBarOption.classList.remove("mobile-clicked");
