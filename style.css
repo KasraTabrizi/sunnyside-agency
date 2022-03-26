@@ -151,7 +151,7 @@ nav li:last-child a {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr 2fr;
 }
 
 .inner__container {
@@ -167,6 +167,13 @@ nav li:last-child a {
   display: block;
   width: 100%;
   max-height: 100%;
+  object-fit: cover;
+}
+
+.image__container_mobile img {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -261,7 +268,7 @@ article .learn_more_button a {
 }
 
 .top_layer .text {
-  padding: 0.5em 1em;
+  padding: 2em 1.5em;
   font-size: 0.9em;
   line-height: 1.5em;
 }
