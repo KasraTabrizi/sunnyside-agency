@@ -220,6 +220,20 @@ article .learn_more_button a {
   background-color: var(--soft-red);
 }
 
+.top_layer h2 {
+  font-family: var(--font-family-fraunces);
+  color: var(--dark-sat-cyan);
+  font-weight: var(--font-weight-900);
+  text-align: center;
+}
+
+.top_layer .text {
+  color: var(--very-dark-gray-blue);
+  font-family: var(--font-family-barlow);
+  font-weight: var(--font-weight-600);
+  text-align: center;
+}
+
 @media (min-width: 600px) {
   .main__container {
     background-image: url("./images/desktop/image-header.jpg");
@@ -277,9 +291,6 @@ article .learn_more_button a {
     grid-template-rows: repeat(3, 1fr);
   }
 
-  article {
-  }
-
   .inner__container {
     align-items: flex-start;
     height: 50%;
@@ -305,5 +316,30 @@ article .learn_more_button a {
 
   .egg_desktop {
     display: block;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .container img {
+    position: absolute;
+  }
+
+  .top_layer {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    bottom: 4em;
+  }
+
+  .top_layer h2 {
+    font-size: 2em;
+  }
+
+  .top_layer .text {
+    padding: 1em 13em;
+    font-size: 0.9em;
+    line-height: 1.5em;
   }
 }
