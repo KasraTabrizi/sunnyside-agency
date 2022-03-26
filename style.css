@@ -183,6 +183,10 @@ article .learn_more_button a {
   width: 110%;
 }
 
+.version2 a::after {
+  background-color: var(--soft-red);
+}
+
 @media (min-width: 600px) {
   .main__container {
     background-image: url("./images/desktop/image-header.jpg");
