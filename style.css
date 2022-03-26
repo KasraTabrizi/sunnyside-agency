@@ -99,7 +99,19 @@ nav li:last-child a {
   background-color: var(--yellow);
   padding: 1em 1.4em;
   border-radius: 2em;
-  font-size: 0.8em;
+  font-size: 0.9em;
+}
+
+.navbar_close__container {
+  display: block;
+  width: 100%;
+  padding: 0 1em;
+  margin-top: -1em;
+}
+
+.navbar_close__container img {
+  height: 24px;
+  width: 24px;
 }
 
 .main__container {
@@ -172,11 +184,12 @@ nav li:last-child a {
   }
 
   nav li:last-child a {
-    font-family: var(--font-family-fraunces);
-    color: var(---very-dark-desat-blue);
     background-color: var(--white);
     padding: 1em 1.4em;
-    border-radius: 2em;
     font-size: 0.8em;
+  }
+
+  .navbar_close__container {
+    display: none;
   }
 }
