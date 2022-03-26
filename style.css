@@ -50,7 +50,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 1.5em 4.4em;
+  padding: 1.5em;
 }
 
 .navbar-header {
@@ -59,20 +59,35 @@ header {
   align-items: center;
 }
 
+.navbar-hamburger {
+  display: block;
+  cursor: pointer;
+}
+
 nav ul {
   text-decoration: none;
   list-style-type: none;
+  display: none;
   margin: 0;
   padding: 0;
-  width: 30vw;
+}
+
+.mobile-clicked {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 87%;
+  height: 80vw;
+  margin: 0 1.5em;
+  background-color: var(--white);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 1em;
 }
 
 nav li a {
-  color: var(--white);
+  color: var(--very-dark-gray-blue);
   text-decoration: none;
   display: block;
   font-family: var(--font-family-barlow);
@@ -81,7 +96,7 @@ nav li a {
 nav li:last-child a {
   font-family: var(--font-family-fraunces);
   color: var(---very-dark-desat-blue);
-  background-color: var(--white);
+  background-color: var(--yellow);
   padding: 1em 1.4em;
   border-radius: 2em;
   font-size: 0.8em;
@@ -92,7 +107,7 @@ nav li:last-child a {
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,7 +117,7 @@ nav li:last-child a {
 .main__container h1 {
   color: var(--white);
   font-family: var(--font-family-fraunces);
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   text-align: center;
   letter-spacing: 0.1em;
 }
@@ -134,5 +149,34 @@ nav li:last-child a {
 
   .navbar-icon img {
     height: 1.7em;
+  }
+
+  header {
+    padding: 1.5em 4.4em;
+  }
+
+  .navbar-hamburger {
+    display: none;
+  }
+
+  nav ul {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  nav li a {
+    color: var(--white);
+  }
+
+  nav li:last-child a {
+    font-family: var(--font-family-fraunces);
+    color: var(---very-dark-desat-blue);
+    background-color: var(--white);
+    padding: 1em 1.4em;
+    border-radius: 2em;
+    font-size: 0.8em;
   }
 }
