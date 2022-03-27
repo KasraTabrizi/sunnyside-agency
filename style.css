@@ -144,6 +144,18 @@ nav li:last-child a:hover {
 .main__container img {
   display: block;
   margin: 3em 0 0 0;
+  animation: updown 1.5s ease-in-out infinite;
+}
+
+@keyframes updown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .egg_mobile {
