@@ -22,6 +22,7 @@
 
   /* footer */
   --dark-mod-cyan: hsl(168, 34%, 41%);
+  --dark-mod-cyan-6: rgba(69, 140, 126, 0.6);
 
   /* NEUTRAL COLORS */
   --very-dark-desat-blue: hsl(212, 27%, 19%);
@@ -331,8 +332,8 @@ article .learn_more_button a {
 }
 
 footer {
-  background-color: var(--dark-mod-cyan);
-  color: var(--very-dark-desat-blue);
+  background-color: var(--dark-mod-cyan-6);
+  color: var(--dark-mod-cyan);
   display: flex;
   justify-content: center;
   align-items: center;
