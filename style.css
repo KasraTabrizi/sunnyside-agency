@@ -324,6 +324,12 @@ article .learn_more_button a {
   margin-top: 1em;
 }
 
+.only-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
 @media (min-width: 600px) {
   .main__container {
     background-image: url("./images/desktop/image-header.jpg");
@@ -443,5 +449,11 @@ article .learn_more_button a {
 
   .client__container .title {
     font-size: 0.8rem;
+  }
+
+  .only-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
   }
 }
