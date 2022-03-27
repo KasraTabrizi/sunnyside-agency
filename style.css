@@ -101,6 +101,12 @@ nav li:last-child a {
   padding: 1em 1.4em;
   border-radius: 2em;
   font-size: 0.9em;
+  transition: all 0.2s ease-in-out;
+}
+
+nav li:last-child a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .navbar_close__container {
@@ -366,6 +372,7 @@ footer {
 
 .social_media li {
   margin: 0.8em;
+  transition: all 0.2s ease-in-out;
 }
 
 .footer_option li a {
@@ -373,6 +380,17 @@ footer {
   text-decoration: none;
   display: block;
   font-family: var(--font-family-barlow);
+}
+
+.footer_option li a,
+.social_icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.footer_option li a:hover,
+.social_icon:hover {
+  color: white;
+  fill: #fff;
 }
 
 @media (min-width: 600px) {
